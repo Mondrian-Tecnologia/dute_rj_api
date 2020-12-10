@@ -77,8 +77,28 @@ Uma chamada executada com sucesso tem o retorno abaixo:
         "envio_pendente": "NAO",
         "retorno_detran": "Enviado com sucesso",
         "faturado": "NAO",
-        "procuracoes": [],
-        "sinal_publicos": [],
+        "procuracoes_attributes": [
+             {
+                "tipo": "comprador",
+                "numero_procuracao": "123456",
+                "nome_procurador": "NOME DO PROCURADOR",
+                "cpf_procurador": "104.826.013-53",
+                "rg_procurador": "1111111111111",
+                "data_procuracao": "2020-12-09",
+                "observacao_procuracao": ""
+            }
+        ],
+        "sinal_publicos_attributes": [
+            {
+                "tipo": "vendedor",
+                "oficio": "1 OFICIO DE XXX",
+                "tabeliao": "TABELIAO DE TESTE",
+                "origem": "CIDADE",
+                "selo": "ASDASD123213232131",
+                "data_selo": "2020-12-09",
+                "observacao": ""
+            }
+        ],
         "protocolos": [
             {
                 "id": 8,
