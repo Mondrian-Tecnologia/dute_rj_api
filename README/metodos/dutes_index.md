@@ -26,6 +26,8 @@ Para listar os DUTes, não há necessidade de passar nenhum parâmetro, porém �
 * __data_final__: A Listagem só retornará DUTes criados até a data informada, espara-se o formato "YYYY-MM-DD"
 * __status__: A Listagem só retornará DUTes com o Status informado, [consulte os status](../status.md)
 * __placa__: A Listagem só retornará DUTes com a Placa informada, espera-se o formato 'XXX0000'
+* __cartorio__: A Listagem só retornará DUTes que tenham sido informados pelo cartório, espara-se 'true'
+* __rtd__: A Listagem só retornará DUTes que tenham sido direcionados ao cartório arquivar, espara-se 'true'
 
 #### 1.2. Exemplo de Requisição
 
@@ -43,6 +45,17 @@ curl --location --request GET 'http://<URL_DO_AMBIENTE>/api/cartorio/v1/dutes?st
 ou
 
 curl --location --request GET 'http://<URL_DO_AMBIENTE>/api/cartorio/v1/dutes?status=pendente_de_registro' \
+--header 'Authorization: Bearer {{token}}'
+```
+
+* Somente Pendêntes de Arquivamento para o Cartório Arquivar
+```bash
+curl --location --request GET 'http://<URL_DO_AMBIENTE>/api/cartorio/v1/dutes?status=1&rtd=true' \
+--header 'Authorization: Bearer {{token}}'
+
+ou
+
+curl --location --request GET 'http://<URL_DO_AMBIENTE>/api/cartorio/v1/dutes?status=pendente_de_registro&rtd=true' \
 --header 'Authorization: Bearer {{token}}'
 ```
 
@@ -78,6 +91,8 @@ Uma chamada executada com sucesso tem o retorno abaixo:
     }
 }
 ```
+
+##### Acesso não autorizado - Status: 401
 
 ##### Dute não localizado - Status: 404
 

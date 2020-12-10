@@ -64,6 +64,8 @@ Uma chamada executada com sucesso tem o retorno abaixo:
 }
 ```
 
+##### Acesso não autorizado - Status: 401
+
 ##### Erros do DETRAN-RJ - Status: 422
 ```bash
 {

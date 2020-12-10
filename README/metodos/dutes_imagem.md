@@ -51,6 +51,8 @@ Uma chamada executada com sucesso tem o retorno abaixo:
 }
 ```
 
+##### Acesso não autorizado - Status: 401
+
 ##### Dute não localizado - Status: 404
 
 ```bash
