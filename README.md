@@ -12,9 +12,11 @@
 
 * [Introdução](README/metodos.md)
 * [Autenticação](README/metodos/autenticacao.md)
+* [Consultar Veículo no DETRAN-RJ](README/metodos/veiculos.md)
 * [Listagem de DUTes](README/metodos/dutes_index.md)
 * [Visualizar DUTe](README/metodos/dutes_show.md)
 * [Digitalização [Base64]](README/metodos/dutes_imagem.md)
 * [Digitalização [Binário]](README/metodos/dutes_imagem_download.md)
 * [Espelho/Comprovante [Binário]](README/metodos/dutes_imprimir.md)
-* [Consultar Veículo no DETRAN-RJ](README/metodos/veiculos.md)
+* [Arquivar DUTe](README/metodos/registro/dutes_update.md)
+* [Solicitar Nova Digitalização](README/metodos/registro/dutes_solicitar_imagem.md)
