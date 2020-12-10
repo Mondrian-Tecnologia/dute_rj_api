@@ -20,11 +20,11 @@ A Requisição criará um protocolo de envio ao DETRAN-RJ, consulte a situação
 
 Caso o protocolo informe que foi bem sucedido o envio ao DETRAN e o novo status do DUTe seja "cancelado" o valor pago pode ser estornado ao cliente, caso o novo status seja "desistencia' significa que o DUTe já foi faturado ou se encontra registrado, não sendo autorizada a realização do estorno.
 
-[Saiba mais sobre esta requisição](https://documenter.getpostman.com/view/5620626/TVmV4YYQ)
+[Saiba mais sobre esta requisição](https://documenter.getpostman.com/view/5620626/TVmV5DRq)
 
 #### 1.1. Como usar?
 
-Para essa requisição informe o ID do DUTe na url e envie o arquivo da digitalização [veja exemplos](https://documenter.getpostman.com/view/5620626/TVmV4YYQ):
+Para essa requisição informe o ID do DUTe na url e envie o arquivo da digitalização [veja exemplos](https://documenter.getpostman.com/view/5620626/TVmV5DRq):
 
 * __motivo_cancelamento__: Informe o motivo do cancelamento, entre as opções:
     * registro_indevido
@@ -42,7 +42,7 @@ curl --location --request POST 'http://localhost:3000/api/cartorio/v1/dutes/1380
 }'
 ```
 
-[Mais exemplos de requisição](https://documenter.getpostman.com/view/5620626/TVmV4YYQ)
+[Mais exemplos de requisição](https://documenter.getpostman.com/view/5620626/TVmV5DRq)
 
 ### 2. Requisição executada com sucesso
 

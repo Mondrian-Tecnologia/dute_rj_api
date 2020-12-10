@@ -16,11 +16,11 @@ __método:__ POST
 
 __header:__ {"key":"Authorization","value":"Bearer {{token}}"}
 
-[Saiba mais sobre esta requisição](https://documenter.getpostman.com/view/5620626/TVmV4YYQ)
+[Saiba mais sobre esta requisição](https://documenter.getpostman.com/view/5620626/TVmV5DRq)
 
 #### 1.1. Como usar?
 
-Para essa requisição informe o ID do DUTe na url e envie o arquivo da digitalização [veja exemplos](https://documenter.getpostman.com/view/5620626/TVmV4YYQ):
+Para essa requisição informe o ID do DUTe na url e envie o arquivo da digitalização [veja exemplos](https://documenter.getpostman.com/view/5620626/TVmV5DRq):
 
 #### 1.2. Exemplo de Requisição
 
@@ -30,7 +30,7 @@ curl --location --request POST 'http://localhost:3000/api/cartorio/v1/informacao
 --form 'imagem=@agosto_20.pdf'
 ```
 
-[Mais exemplos de requisição](https://documenter.getpostman.com/view/5620626/TVmV4YYQ)
+[Mais exemplos de requisição](https://documenter.getpostman.com/view/5620626/TVmV5DRq)
 
 ### 2. Requisição executada com sucesso
 

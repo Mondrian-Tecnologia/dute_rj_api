@@ -16,7 +16,7 @@ __método:__ POST
 
 __header:__ {"key":"Authorization","value":"Bearer {{token}}"}
 
-[Saiba mais sobre esta requisição](https://documenter.getpostman.com/view/5620626/TVmV4YYQ)
+[Saiba mais sobre esta requisição](https://documenter.getpostman.com/view/5620626/TVmV5DRq)
 
 #### 1.1. Como usar?
 
@@ -35,7 +35,7 @@ curl --location --request GET 'http://<URL_DO_AMBIENTE>/api/cartorio/v1/dutes/13
 --header 'Authorization: Bearer {{token}}'
 ```
 
-[Mais exemplos de requisição](https://documenter.getpostman.com/view/5620626/TVmV4YYQ)
+[Mais exemplos de requisição](https://documenter.getpostman.com/view/5620626/TVmV5DRq)
 
 ### 2. Requisição executada com sucesso
 

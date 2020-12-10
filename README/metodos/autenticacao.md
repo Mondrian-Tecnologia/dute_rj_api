@@ -14,7 +14,7 @@ __endereço:__ /api/cartorio/auth/login
 
 __método:__ POST
 
-[Mais exemplos de requisição](https://documenter.getpostman.com/view/5620626/TVmV4YYQ)
+[Mais exemplos de requisição](https://documenter.getpostman.com/view/5620626/TVmV5DRq)
 
 #### 1.1. Como usar?
 
@@ -41,7 +41,7 @@ curl --location --request POST 'http://localhost:3000/api/cartorio/auth/login' \
 }'
 ```
 
-[Mais exemplos de requisição](https://documenter.getpostman.com/view/5620626/TVmV4YYQ)
+[Mais exemplos de requisição](https://documenter.getpostman.com/view/5620626/TVmV5DRq)
 
 ### 2. Requisição executada com sucesso
 
