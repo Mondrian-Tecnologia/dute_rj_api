@@ -20,7 +20,7 @@ __header:__ {"key":"Authorization","value":"Bearer {{token}}"}
 
 #### 1.1. Como usar?
 
-Para listar os DUTes, não há necessidade de passar nenhum parâmetro, porém é possível filtrar pelos seguintes campos.
+Para listar os DUTes, não há necessidade de enviar nenhum parâmetro, porém é possível filtrar pelos seguintes campos.
 
 * __data_inicial__: A Listagem só retornará DUTes criados a partir da data informada, espara-se o formato "YYYY-MM-DD"
 * __data_final__: A Listagem só retornará DUTes criados até a data informada, espara-se o formato "YYYY-MM-DD"
@@ -108,7 +108,7 @@ Uma chamada executada com sucesso tem o retorno abaixo:
 ```bash
 {
     "errors": [
-        "DUTe-RJ:: Erro desconhecido [<F>]"
+        "DUTe-RJ:: Erro desconhecido [<mensagem>]"
     ]
 }
 ```

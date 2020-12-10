@@ -20,3 +20,4 @@ Método | Descrição
 [Arquivar](metodos/registro/dutes_update.md) | Informar os dados de Arquivamento de um DUTe
 [Solicitar Nova Digitalização](metodos/registro/dutes_solicitar_imagem.md) | Solicitar nova digitalização ao cartório que informou a Com. de Venda
 [Visualizar Protocolo](metodos/protocolos_show.md) | Exibir dados detalhados do Protocolo do DUTe cadastrado 
+[Status da Comunicação com DETRAN-RJ](metodos/home_status.md) | Verifica o Status da Comunicação com o DETRAN-RJ 

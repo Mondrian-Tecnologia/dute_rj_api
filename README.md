@@ -25,3 +25,4 @@
 * [Espelho/Comprovante [Binário]](README/metodos/dutes_imprimir.md)
 * [Arquivar DUTe](README/metodos/registro/dutes_update.md)
 * [Solicitar Nova Digitalização](README/metodos/registro/dutes_solicitar_imagem.md)
+* [Status da Comunicação com DETRAN-RJ](README/metodos/home_status.md)
