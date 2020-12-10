@@ -1,0 +1,493 @@
+{
+	"info": {
+		"_postman_id": "36f549e0-d1f8-409a-812d-e6917781479e",
+		"name": "DUTe RJ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "informacao",
+			"item": [
+				{
+					"name": "Informar Comunicação de Venda",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dute\": {\n        \"placa\": \"KKA9985\",\n        \"renavam\": \"00951210246\",\n        \"crv\": \"011382636010\",\n        \"data_crv\": \"2014-03-22\",\n        \"chassi\": \"9BGTR69W07B136481\",\n        \n\t\t\"vendedor_cpf_cnpj\": \"00327027363\",\n\n        \"comprador_cpf_cnpj\": \"10473093782\",\n        \"comprador_nome\": \"COMPRADOR\",\n        \"comprador_logradouro\": \"ALAMEDA SANTA CRUZ\",\n        \"comprador_numero\": \"0000\",\n        \"comprador_complemento\": \"CASA\",\n        \"comprador_bairro\": \"JAPUIBA\",\n        \"comprador_cep\": \"23934-565\",\n        \"comprador_municipio\": \"5801\",\n        \"comprador_uf\": \"RJ\",\n\n        \"data_compra\": \"2020-11-30\",\n        \"valor_compra\": \"30.000,00\",\n        \"data_autenticacao\": \"2020-11-30\",\n        \"selo_vendedor\": \"EDPE21233-BNE\",\n        \"selo_comprador\": \"EDPE21234-LTX\",\n        \"procuracoes_attributes\": [\n            {\n                \"tipo\": \"vendedor\",\n                \"numero_procuracao\": \"123456\",\n                \"nome_procurador\": \"PROCURADOR\",\n                \"cpf_procurador\": \"003.270.273-63\",\n                \"rg_procurador\": \"123456\",\n                \"data_procuracao\": \"2020-12-09\",\n                \"observacao_procuracao\": \"OBSERVACAO\"\n            },\n            {\n                \"tipo\": \"comprador\",\n                \"numero_procuracao\": \"123456\",\n                \"nome_procurador\": \"NOME DO PROCURADOR\",\n                \"cpf_procurador\": \"104.826.013-53\",\n                \"rg_procurador\": \"1111111111111\",\n                \"data_procuracao\": \"2020-12-09\",\n                \"observacao_procuracao\": \"\"\n            }\n        ],\n        \"sinal_publicos_attributes\": [\n            {\n                \"tipo\": \"vendedor\",\n                \"oficio\": \"1 OFICIO DE XXX\",\n                \"tabeliao\": \"TABELIAO DE TESTE\",\n                \"origem\": \"CIDADE\",\n                \"selo\": \"ASDASD123213232131\",\n                \"data_selo\": \"2020-12-09\",\n                \"observacao\": \"\"\n            }\n        ]\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/cartorio/v1/informacao/dutes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"cartorio",
+								"v1",
+								"informacao",
+								"dutes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Comunicação de Venda",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dute\": {\n        \"comprador_cpf_cnpj\": \"10473093782\",\n        \"comprador_nome\": \"COMPRADOR\",\n        \"comprador_logradouro\": \"ALAMEDA SANTA CRUZ\",\n        \"comprador_numero\": \"0000\",\n        \"comprador_complemento\": \"CASA\",\n        \"comprador_bairro\": \"JAPUIBA\",\n        \"comprador_cep\": \"23934-565\",\n        \"comprador_municipio\": \"5801\",\n        \"comprador_uf\": \"RJ\",\n        \"data_compra\": \"2020-11-30\",\n        \"valor_compra\": \"30.000,00\",\n        \"data_autenticacao\": \"2020-11-30\",\n        \"selo_vendedor\": \"EDPE21233-BNE\",\n        \"selo_comprador\": \"EDPE21234-LTX\",\n        \"procuracoes_attributes\": [\n            {\n                \"tipo\": \"vendedor\",\n                \"numero_procuracao\": \"123456\",\n                \"nome_procurador\": \"PROCURADOR\",\n                \"cpf_procurador\": \"003.270.273-63\",\n                \"rg_procurador\": \"123456\",\n                \"data_procuracao\": \"2020-12-09\",\n                \"observacao_procuracao\": \"OBSERVACAO\"\n            },\n            {\n                \"tipo\": \"comprador\",\n                \"numero_procuracao\": \"123456\",\n                \"nome_procurador\": \"NOME DO PROCURADOR\",\n                \"cpf_procurador\": \"104.826.013-53\",\n                \"rg_procurador\": \"1111111111111\",\n                \"data_procuracao\": \"2020-12-09\",\n                \"observacao_procuracao\": \"\"\n            }\n        ],\n        \"sinal_publicos_attributes\": [\n            {\n                \"tipo\": \"vendedor\",\n                \"oficio\": \"1 OFICIO DE XXX\",\n                \"tabeliao\": \"TABELIAO DE TESTE\",\n                \"origem\": \"CIDADE\",\n                \"selo\": \"ASDASD123213232131\",\n                \"data_selo\": \"2020-12-09\",\n                \"observacao\": \"\"\n            }\n        ]\n    }\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/cartorio/v1/informacao/dutes/138103",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"cartorio",
+								"v1",
+								"informacao",
+								"dutes",
+								"138103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Enviar Digitalização",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "imagem",
+									"type": "file",
+									"src": "agosto_20.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/cartorio/v1/informacao/dutes/137890/upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"cartorio",
+								"v1",
+								"informacao",
+								"dutes",
+								"137890",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "registro",
+			"item": [
+				{
+					"name": "Arquivar DUTe",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numero_selo_registro\": \"AAAA12345-AAB\",\n    \"data_registro\": \"2020-01-01\",\n    \"numero_registro\": 1234\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/cartorio/v1/registro/dutes/138090",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"cartorio",
+								"v1",
+								"registro",
+								"dutes",
+								"138090"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Solicitar Nova Digitalização",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numero_selo_registro\": \"AAAA12345-AAB\",\n    \"data_registro\": \"2020-01-01\",\n    \"numero_registro\": 1234\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/cartorio/v1/registro/dutes/138090/solicitar_imagem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"cartorio",
+								"v1",
+								"registro",
+								"dutes",
+								"138090",
+								"solicitar_imagem"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Autenticação",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"empresa\": { \n        \"username\": \"Mondrian_T3STE\",\n        \"password\": \"123456\"\n    }, \n    \"usuario\": {\n        \"username\": \"cartorio\",\n        \"password\": \"123456\"\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/cartorio/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cartorio",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listagem de DUTes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/cartorio/v1/dutes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cartorio",
+						"v1",
+						"dutes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Visualizar DUTe",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/cartorio/v1/dutes/138090",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cartorio",
+						"v1",
+						"dutes",
+						"138090"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Digitalização [Base64]",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/cartorio/v1/dutes/138090/imagem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cartorio",
+						"v1",
+						"dutes",
+						"138090",
+						"imagem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Digitalização [Binário]",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/cartorio/v1/dutes/138090/imagem/download",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cartorio",
+						"v1",
+						"dutes",
+						"138090",
+						"imagem",
+						"download"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Veículo no DETRAN-RJ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"veiculo\":{\n        \"cpf_vendedor\": \"02231851326\",\n        \"placa\": \"JYU1234\",\n        \"crv\": \"123456\",\n        \"renavam\": \"132456\",\n        \"data_crv\": \"2020-01-01\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/cartorio/v1/veiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cartorio",
+						"v1",
+						"veiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Visualizar Protocolo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/cartorio/v1/dutes/138090/protocolos/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cartorio",
+						"v1",
+						"dutes",
+						"138090",
+						"protocolos",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancelar DUTe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"motivo_cancelamento\": \"desistencia\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/cartorio/v1/dutes/138091/cancelar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cartorio",
+						"v1",
+						"dutes",
+						"138091",
+						"cancelar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status da Comunicação com DETRAN-RJ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/cartorio/v1/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cartorio",
+						"v1",
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
