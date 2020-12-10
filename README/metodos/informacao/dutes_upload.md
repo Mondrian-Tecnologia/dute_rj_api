@@ -1,18 +1,18 @@
-## Digitalização do DUTe em Base64
+## Enviar Imagem 
 
-Método utilizado para receber a digitalização como Base64 de um DUTes que o Cartório informou ou tenha sido definido como Cartório de arquivamento.
+Método utilizado informar digitalização (CRLV) da Comunicação de Venda.
 
-*Caso sua empresa ainda não o possua acesso: [Processo de Integração](../integracao.md)*
+*Caso sua empresa ainda não o possua acesso: [Processo de Integração](../../integracao.md)*
 
-[Definindo Ambiente](../ambiente.md)
+[Definindo Ambiente](../../ambiente.md)
 
 ### 1. Sobre a Requisição
 
-Sua requisição deve ter o Token adquirido no método de [Autenticação](autenticacao.md)
+Sua requisição deve ter o Token adquirido no método de [Autenticação](../autenticacao.md)
 
-__endereço:__ /api/cartorio/v1/dutes/:id/imagem
+__endereço:__ /api/cartorio/v1/informacao/dutes/:id/upload
 
-__método:__ GET
+__método:__ POST
 
 __header:__ {"key":"Authorization","value":"Bearer {{token}}"}
 
@@ -20,13 +20,14 @@ __header:__ {"key":"Authorization","value":"Bearer {{token}}"}
 
 #### 1.1. Como usar?
 
-Para essa requisição informe o ID do DUTe na url.
+Para essa requisição informe o ID do DUTe na url e envie o arquivo da digitalização [veja exemplos](https://documenter.getpostman.com/view/5620626/TVmV4YYQ):
 
 #### 1.2. Exemplo de Requisição
 
 ```bash
-curl --location --request GET 'http://<URL_DO_AMBIENTE>/api/cartorio/v1/dutes/138084/imagem' \
---header 'Authorization: Bearer {{token}}'
+curl --location --request POST 'http://localhost:3000/api/cartorio/v1/informacao/dutes/137890/upload' \
+--header 'Authorization: Bearer {{token}}' \
+--form 'imagem=@agosto_20.pdf'
 ```
 
 [Mais exemplos de requisição](https://documenter.getpostman.com/view/5620626/TVmV4YYQ)
@@ -34,18 +35,16 @@ curl --location --request GET 'http://<URL_DO_AMBIENTE>/api/cartorio/v1/dutes/13
 ### 2. Requisição executada com sucesso
 
 Uma chamada executada com sucesso tem o retorno abaixo: 
-* O campo nova_imagem, informa se o RTD solicitou o envio de uma nova imagem.
 
 ##### Bem sucedido - Status: 200
 ```bash
 {
     "dute": {
-        "id": 138084,
-        "nova_imagem": false,
+        "id": 138090,
         "imagem": {
             "file_name": "imagem_(9).pdf",
             "content_type": "application/pdf",
-            "base64": "<base64 do arquivo>"
+            "base64": "JVBERi0xLjQKJcfsj6... continua"
         }
     }
 }

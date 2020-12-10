@@ -7,6 +7,7 @@ Método | Descrição
 ------------ | -------------
 [Autenticação](metodos/autenticacao.md) | Gerar o Token de acesso aos demais métodos
 [Consultar Veículo no DETRAN-RJ](metodos/veiculos.md) | Consulta prévia que deve ser realizada para validar se é possível informar comunicação de venda para o veículo
+[Informar Comunicação de Venda](metodos/informacao/dutes_create.md) | Informar Comunicação de Venda
 [Listagem de DUTes](metodos/dutes_index.md) | Listar dados simplificados de DUTes informados pelo cartório ou que foram distribuídos para arquivamento, aceita filtros  
 [Visualizar DUTe](metodos/dutes_show.md) | Exibir dados detalhados de um DUTe
 [Digitalização [Base64]](metodos/dutes_imagem.md) | Receber digitalização códificado por Base 64  (Documento CRLV)

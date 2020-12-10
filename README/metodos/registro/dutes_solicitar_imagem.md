@@ -14,9 +14,9 @@ __endereço:__ /api/cartorio/v1/registro/dutes/:id/solicitar_imagem
 
 __método:__ POST
 
-__header:__ {"key":"Authorization","value":"Bearer {{token}}"
+__header:__ {"key":"Authorization","value":"Bearer {{token}}"}
 
-[Saiba mais sobre esta requisição](POSTMAN)
+[Saiba mais sobre esta requisição](https://documenter.getpostman.com/view/5620626/TVmV4YYQ)
 
 #### 1.1. Como usar?
 
@@ -29,7 +29,7 @@ curl --location --request POST 'http://localhost:3000/api/cartorio/v1/registro/d
 --header 'Authorization: Bearer {{token}}'
 ```
 
-[Mais exemplos de requisição](POSTMAN)
+[Mais exemplos de requisição](https://documenter.getpostman.com/view/5620626/TVmV4YYQ)
 
 ### 2. Requisição executada com sucesso
 
