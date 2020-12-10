@@ -26,23 +26,16 @@ Para alterar ou reenviar uma informação, utilize o método de [Atualizar DUTe]
 
 #### 1.1. Como usar?
 
-Para essa requisição os parâmetros documentos em [Estrutura do DUTe](../../dute.md).
+Para essa requisição informe o ID do DUTe na url e envie os parâmetros documentos em [Estrutura do DUTe](../../dute.md).
 
 #### 1.2. Exemplo de Requisição
 
 ```bash
-curl --location --request POST 'http://<URL_DO_AMBIENTE>/api/cartorio/v1/informacao/dutes' \
+curl --location --request PATCH 'http://<URL_AMBIENTE>>/api/cartorio/v1/informacao/dutes/138103' \
+--header 'Content-Type: application/json' \
 --header 'Authorization: Bearer {{token}}' \
 --data-raw '{
     "dute": {
-        "placa": "KKA9985",
-        "renavam": "00951210246",
-        "crv": "011382636010",
-        "data_crv": "2014-03-22",
-        "chassi": "9BGTR69W07B136481",
-        
-        "vendedor_cpf_cnpj": "00327027363",
-
         "comprador_cpf_cnpj": "10473093782",
         "comprador_nome": "COMPRADOR",
         "comprador_logradouro": "ALAMEDA SANTA CRUZ",
@@ -52,7 +45,6 @@ curl --location --request POST 'http://<URL_DO_AMBIENTE>/api/cartorio/v1/informa
         "comprador_cep": "23934-565",
         "comprador_municipio": "5801",
         "comprador_uf": "RJ",
-
         "data_compra": "2020-11-30",
         "valor_compra": "30.000,00",
         "data_autenticacao": "2020-11-30",
@@ -103,11 +95,11 @@ Uma chamada executada com sucesso tem o retorno abaixo:
 ```bash
 {
     "protocolo": {
-        "id": 9,
+        "id": 24,
         "status": "pendente",
-        "dute_id": 138091,
+        "dute_id": 138103,
         "dute": {
-            "placa": "KKA9985",
+            "placa": "KKA0001",
             "renavam": "00951210246",
             "crv": "011382636010",
             "status": "em_envio"

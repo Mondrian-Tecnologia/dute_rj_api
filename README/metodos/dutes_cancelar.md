@@ -42,8 +42,6 @@ curl --location --request POST 'http://localhost:3000/api/cartorio/v1/dutes/1380
 }'
 ```
 
-
-
 [Mais exemplos de requisição](https://documenter.getpostman.com/view/5620626/TVmV4YYQ)
 
 ### 2. Requisição executada com sucesso
