@@ -19,26 +19,4 @@ Método | Descrição
 [Espelho / Comprovante [Binário]](metodos/dutes_imprimir.md) | Receber o Binário da digitalização (Documento CRLV)
 [Arquivar](metodos/registro/dutes_update.md) | Informar os dados de Arquivamento de um DUTe
 [Solicitar Nova Digitalização](metodos/registro/dutes_solicitar_imagem.md) | Solicitar nova digitalização ao cartório que informou a Com. de Venda
-
-Visualizar Protocolo | Exibir dados detalhados do Protocolo do DUTe cadastrado 
-
-##### 1. Integração
-
-A Empresa que desejar acessar os serviços da API, deverá solicitar acesso à API do DUTe RJ enviando um email (suporte@mondriantecnologia.com) os seguintes dados:
-
-* *CNPJ*
-* *Razão Social*
-* *Nome Fantasia*
-
-Lhe responderemos o email com acesso que utilizaremos para identificar sua empresa no processo de autenticação da API:
-
-* *[Empresa] Usuário*
-* *[Empresa] Senha*
-* *[Usuario para Homologação] Usuário*
-* *[Usuario para Homologação] Senha*
-
-##### 2. Homologação e Produção
-
-Os ambientes estarão disponíveis tão logo sua empresa receba o email com __Usuário__ e __Senha__ de acesso.
-
-[Endereço dos Ambientes](ambiente.md)
+[Visualizar Protocolo](metodos/protocolos_show.md) | Exibir dados detalhados do Protocolo do DUTe cadastrado 
