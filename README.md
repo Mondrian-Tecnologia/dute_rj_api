@@ -39,7 +39,7 @@ Crie um iframe ou envie o usuário à página, informando os parâmetros:
 
 http://chat.mondriantecnologia.com/chat?sistema=dute_rj&nome=<JOAO_DA_SILVA>&telefone=<22 1234456789>
 
-http://chat.mondriantecnologia.com/chat?sistema=dute_rj&nome=teste&telefone=221234456789>
+http://chat.mondriantecnologia.com/chat?sistema=dute_rj&nome=teste&telefone=221234456789
 
 
 
