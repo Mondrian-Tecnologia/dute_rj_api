@@ -26,3 +26,19 @@
 * [Arquivar DUTe](README/metodos/registro/dutes_update.md)
 * [Solicitar Nova Digitalização](README/metodos/registro/dutes_solicitar_imagem.md)
 * [Status da Comunicação com DETRAN-RJ](README/metodos/home_status.md)
+
+#### Chat de Suporte ao Cartório
+
+Agora é possível adicionar nosso chat de Suporte ao usuário que queira entrar em contato conosco.
+
+Crie um iframe ou envie o usuário à página, informando os parâmetros:
+
+* sistema (dute_rj - FIXO)
+* nome (nome utilizado no atendimento)
+* telefone (somente numeros)
+
+http://chat.mondriantecnologia.com/chat?sistema=dute_rj&nome=<JOAO DA SILVA>&telefone=<22 1234456789>
+
+
+
+
