@@ -29,7 +29,7 @@
 
 #### Chat de Suporte ao Cartório
 
-Agora é possível adicionar nosso chat de Suporte ao usuário que queira entrar em contato conosco.
+Agora é possível adicionar nosso Chat de Suporte ao usuário em seu sistema.
 
 Crie um iframe ou envie o usuário à página, informando os parâmetros:
 
