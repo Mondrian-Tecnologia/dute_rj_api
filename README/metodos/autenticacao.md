@@ -28,7 +28,8 @@ Para requisitar acesso, informe os seguintes parâmetros de entrada.
 #### 1.2. Exemplo de Requisição
 
 ```bash
-curl --location --request POST 'http://localhost:3000/api/cartorio/auth/login' \
+curl --location --request POST 'http://homolog.rj.duteletronico.com.br/api/cartorio/auth/login' \
+--header 'Content-Type: application/json' \
 --data-raw '{
     "empresa": { 
         "username": "Login_Empresa",
