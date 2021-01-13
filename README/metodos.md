@@ -16,7 +16,8 @@ Método | Descrição
 [Visualizar DUTe](metodos/dutes_show.md) | Exibir dados detalhados de um DUTe
 [Digitalização [Base64]](metodos/dutes_imagem.md) | Receber digitalização códificado por Base 64  (Documento CRLV)
 [Digitalização [Binário]](metodos/dutes_imagem_download.md)| Receber o Binário da digitalização (Documento CRLV)
-[Espelho / Comprovante [Binário]](metodos/dutes_imprimir.md) | Receber o Binário da digitalização (Documento CRLV)
+[Espelho / Comprovante [Binário]](metodos/dutes_imprimir.md) | Receber o Binário do recibo
+[Espelho / Comprovante [Base64]](metodos/dutes_imprimir_base64.md) | Receber o Base64 do recibo
 [Arquivar](metodos/registro/dutes_update.md) | Informar os dados de Arquivamento de um DUTe
 [Solicitar Nova Digitalização](metodos/registro/dutes_solicitar_imagem.md) | Solicitar nova digitalização ao cartório que informou a Com. de Venda
 [Visualizar Protocolo](metodos/protocolos_show.md) | Exibir dados detalhados do Protocolo do DUTe cadastrado 
