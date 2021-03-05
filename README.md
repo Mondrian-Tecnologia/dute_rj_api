@@ -28,4 +28,9 @@
 * [Status da Comunicação com DETRAN-RJ](README/metodos/home_status.md)
 
 
-#### Chat Removido
+##### Suporte
+
+Agora é possível direcionar o cliente à página de suporte do DUTe RJ (ticket/chat)
+
+http://suporte.rj.duteletronico.com.br
+
