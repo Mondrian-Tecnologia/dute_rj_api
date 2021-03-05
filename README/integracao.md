@@ -4,7 +4,7 @@ Os primeiros passos para quem está utilizando o serviço pela primeira vez.
 
 ##### 1. Integração
 
-A Empresa que desejar acessar os serviços da API, deverá solicitar acesso à API do DUTe RJ enviando um email (suporte@mondriantecnologia.com) os seguintes dados:
+A Empresa que desejar acessar os serviços da API, deverá solicitar acesso à API do DUTe RJ enviando um email (suporte.duterj@mondriantecnologia.com) os seguintes dados:
 
 * *CNPJ*
 * *Razão Social*
