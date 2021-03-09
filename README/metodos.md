@@ -10,6 +10,7 @@ Método | Descrição
 [Informar Comunicação de Venda](metodos/informacao/dutes_create.md) | Informar Comunicação de Venda
 [Atualizar Comunicação de Venda](metodos/informacao/dutes_update.md) | Atualizar Comunicação de Venda
 [Enviar Digitalização do DUTe](metodos/informacao/dutes_upload.md) | Enviar Digitalização do DUTe (CRLV)
+[Enviar Digitalização do DUTe [Base64]](metodos/informacao/dutes_upload_base64.md) | Enviar Digitalização do DUTe por Base64 (CRLV)
 [Cancelar DUTe](metodos/dutes_cancelar.md) | Solicitar Cancelamento do DUTe
 [Visualizar Protocolo](metodos/protocolos_show.md) | Consulta a situação de um protocolo, o protocolo é utilizado para acompanhar requisições assíncronas como Informar Com. de Venda e Cancelamentos. 
 [Listagem de DUTes](metodos/dutes_index.md) | Listar dados simplificados de DUTes informados pelo cartório ou que foram distribuídos para arquivamento, aceita filtros  
