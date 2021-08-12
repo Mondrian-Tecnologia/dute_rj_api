@@ -22,12 +22,12 @@ __header:__ {"key":"Authorization","value":"Bearer {{token}}"}
 
 Para listar os DUTes, não há necessidade de enviar nenhum parâmetro, porém é possível filtrar pelos seguintes campos.
 
-* __data_inicial__: A Listagem só retornará DUTes criados a partir da data informada, espara-se o formato "YYYY-MM-DD"
-* __data_final__: A Listagem só retornará DUTes criados até a data informada, espara-se o formato "YYYY-MM-DD"
+* __data_inicial__: A Listagem só retornará DUTes criados a partir da data informada, espera-se o formato "YYYY-MM-DD"
+* __data_final__: A Listagem só retornará DUTes criados até a data informada, espera-se o formato "YYYY-MM-DD"
 * __status__: A Listagem só retornará DUTes com o Status informado, [consulte os status](../status.md)
 * __placa__: A Listagem só retornará DUTes com a Placa informada, espera-se o formato 'XXX0000'
-* __cartorio__: A Listagem só retornará DUTes que tenham sido informados pelo cartório, espara-se 'true'
-* __rtd__: A Listagem só retornará DUTes que tenham sido direcionados ao cartório arquivar, espara-se 'true'
+* __cartorio__: A Listagem só retornará DUTes que tenham sido informados pelo cartório, espera-se 'true'
+* __rtd__: A Listagem só retornará DUTes que tenham sido direcionados ao cartório arquivar, espera-se 'true'
 
 #### 1.2. Exemplo de Requisição
 
