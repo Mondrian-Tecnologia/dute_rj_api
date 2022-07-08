@@ -12,7 +12,7 @@ Sua requisição deve ter o Token adquirido no método de [Autenticação](auten
 
 __endereço:__ /api/cartorio/v1/dutes/:dute_id/protocolos/:id_protocolo
 
-__método:__ POST
+__método:__ GET
 
 __header:__ {"key":"Authorization","value":"Bearer {{token}}"}
 
